@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+  
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      card_view:cardElevation="4dp"
+      card_view:cardUseCompatPadding="true"
+      card_view:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/imageView"
+          android:scaleType="centerCrop" />
+
+      <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="2dp"
+      android:theme="@style/RecyclerViewCardViewBottomTheme" >
+
+        <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:textColor="#333333"
+      android:text="Caption"
+      android:id="@+id/textView"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginLeft="4dp" />
+        
+
+      </LinearLayout>
+
+
+      <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      
+      android:theme="@style/RecyclerViewCardViewBottomActionsTheme" >
+
+      <Button
+      android:id="@+id/angry_btn"
+      android:text="View Full Description"
+      android:textColor="#383838"
+      android:textSize="16sp"
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+     
+      android:shadowColor="#A8A8A8"
+      android:shadowDx="0"
+      android:shadowDy="0"
+      android:shadowRadius="5"
+      />
+       
+      </LinearLayout>
+
+
+
+
+    </LinearLayout>
+  </android.support.v7.widget.CardView>
+      </LinearLayout>
+
+</FrameLayout>
